@@ -1,0 +1,7 @@
+# action.yml
+name: 'CentOS8 with Java 15'
+description: 'Docker container for building on CentOS with Java 15'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

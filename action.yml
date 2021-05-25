@@ -2,6 +2,13 @@
 name: 'CentOS8 with Java 15'
 description: 'Docker container for building on CentOS with Java 15'
 
+inputs:
+  command:
+    description: 'Command to run'
+    required: true
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
